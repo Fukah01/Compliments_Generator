@@ -43,8 +43,14 @@ function generateRandomInsult() {
     randomAdjectives[Math.floor(Math.random() * randomAdjectives.length)];
 
   let randomWord = randomWords[Math.floor(Math.random() * randomWords.length)];
-
-  const content = `Your ${randomBodyPart} is like a ${randomAdjective} ${randomWord}`;
+  const vowels = ["a", "e", "i", "o", "u"];
+  let article;
+  if (vowels.includes(randomAdjective.slice(0, 1))) {
+    article = "an";
+  } else {
+    article = "a";
+  }
+  const content = `Your ${randomBodyPart} is like ${article} ${randomAdjective} ${randomWord}`;
   txtTypingEffect(outputTxt, content);
 }
 function txtTypingEffect(element, txt, i = 0) {
