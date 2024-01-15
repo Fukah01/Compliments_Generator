@@ -11,23 +11,23 @@ let randomBodyParts = [
   "shoulder",
 ];
 let randomAdjectives = [
-  "stinky",
-  "ugly",
-  "creepy",
-  "greasy",
-  "boring",
-  "egotistical",
-  "repulsive",
-  "antiquated",
-  "regrettable",
-  "hammered",
+  "impressive",
+  "invigorating",
+  "courageous",
+  "admirable",
+  "impressively",
+  "charming",
+  "smart",
+  "first class",
+  "estimated",
+  "amiable",
 ];
 let randomWords = [
   "rainy day",
   "salt shaker",
   "sink",
   "masher",
-  "nerves",
+  "nerve",
   "pack",
   "stamp",
   "rubber",
@@ -35,7 +35,7 @@ let randomWords = [
   "glove",
 ];
 
-function generateRandomInsult() {
+function generateRandomCompliment() {
   let randomBodyPart =
     randomBodyParts[Math.floor(Math.random() * randomBodyParts.length)];
 
@@ -63,7 +63,7 @@ function txtTypingEffect(element, txt, i = 0) {
   }
   setTimeout(() => txtTypingEffect(element, txt, i + 1), 50);
 }
-const getInsultButton = document.getElementById("getInsultButton");
-getInsultButton.addEventListener("click", function () {
-  generateRandomInsult();
+const getComplimentButton = document.getElementById("getComplimentButton");
+getComplimentButton.addEventListener("click", function () {
+  generateRandomCompliment();
 });

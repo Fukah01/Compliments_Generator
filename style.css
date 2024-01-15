@@ -75,7 +75,7 @@ h1::after {
   overflow: hidden;
 }
 
-#getInsultButton {
+#getComplimentButton {
   position: absolute;
   bottom: 6rem;
   width: 7rem;
@@ -87,12 +87,12 @@ h1::after {
   transition: 0.2s ease-out;
   border-radius: 0.1rem;
 }
-#getInsultButton:hover {
+#getComplimentButton:hover {
   background-image: url(./material/cesar-couto-27HiryxnHJk-unsplash.jpg);
   background-position: right;
 }
 
-#getInsultButton:active {
+#getComplimentButton:active {
   width: 8rem;
   border: none;
 }
